@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Scrollbar Custom CSS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="theme-color" content="#4285f4">
+        <!-- Bootstrap CSS CDN -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
 
     <!-- Bootstrap CSS CDN -->
@@ -20,7 +39,7 @@
 
   <title>RoomsPay</title>  
   <link rel="stylesheet" href="css/homestyle.css">
-
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!-- for mobile view -->
@@ -29,247 +48,8 @@
   <link rel="stylesheet" href="css/headerFooter.css">
   <link rel="stylesheet" href="css/slider.css">
 
-
-<style type="text/css">
-            /*
-    DEMO STYLE
-*/
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
-
-a, a:hover, a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100vh;
-    z-index: 999;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
-    overflow-y: scroll;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
-#sidebar.active {
-    left: 0;
-}
-
-#dismiss {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    background: #7386D5;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-#dismiss:hover {
-    background: #fff;
-    color: #7386D5;
-}
-
-.overlay {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    display: none;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    font-family: 'Glyphicons Halflings';
-    font-size: 0.6em;
-}
-a[aria-expanded="true"]::before {
-    content: '\e260';
-}
-
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-
-</style>
-
-
 </head>
 <body >
-
-<!-- 
-             <li><a href="rooms.html">Home</a></li>
-             <li><a href="rentroom.html">Rooms</a></li>
-             <li><a href="services.html">Services</a></li>
-             <li><a href="about.html">About</a></li>
-             <li><a href="profile.html">Register</a></li>
-             <li><a href="login.html">Login</a></li> -->
-           
-  <!-- <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="
-  navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="rooms.html">Rooms <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
-
-      <li class="nav-item">
-        <a a class="nav-link" href="about.html" tabindex="-1">About us</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          login
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Login</a>
-          <a class="dropdown-item" href="register.html">Register</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-   </header>  -->
 
         <div class="wrapper">
             <!-- Sidebar Holder -->
@@ -328,14 +108,14 @@ a.article, a.article:hover {
                             </button>
                         </div>
 
-                       <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#">Page</a></li>
                                 <li><a href="#">Page</a></li>
                                 <li><a href="#">Page</a></li>
                                 <li><a href="#">Page</a></li>
                             </ul>
-                        </div> -->
+                        </div>
                     </div>
                 </nav>
 
@@ -345,7 +125,81 @@ a.article, a.article:hover {
 
 
 
-        <div class="overlay"></div>
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+<!-- 
+             <li><a href="rooms.html">Home</a></li>
+             <li><a href="rentroom.html">Rooms</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="profile.html">Register</a></li>
+             <li><a href="login.html">Login</a></li> -->
+           
+  <!-- <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="
+  navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="rooms.html">Rooms <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a a class="nav-link" href="about.html" tabindex="-1">About us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          login
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+   </header>  -->
 
 
 <br><br><br><br>
@@ -400,7 +254,7 @@ a.article, a.article:hover {
 
     <!-- post room button here
     text here-->
-<!-- 
+
 <section >
   <div  class="landlord">
     <div class="landlord-inner">
@@ -413,7 +267,7 @@ a.article, a.article:hover {
     </div>
   </div>
 </section>
- -->
+
 <!-- blocks -->
 
 <!-- section-3 -->
@@ -423,7 +277,25 @@ a.article, a.article:hover {
     
     <!-- <h3 style="color: #c0392b;">NearBy Rooms</h3><hr>	 -->
         <!-- image card here -->
-<!--         <div class="card" style="width: 18rem; margin: 0 auto;">
+        <div class="card" style="width: 18rem; margin: 0 auto;">
+          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+          <div class="card-body">
+            <h5>Title here</h5>
+            <p>this is text</p>
+            <a href="#" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+<hr>
+        <div class="card" style="width: 18rem; margin: 0 auto;">
+          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+          <div class="card-body">
+            <h5>Title here</h5>
+            <p>this is text</p>
+            <a href="#" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+<hr>
+        <div class="card" style="width: 18rem; margin: 0 auto;">
           <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
           <div class="card-body">
             <h5>Title here</h5>
@@ -433,13 +305,13 @@ a.article, a.article:hover {
         </div>
 <hr>
 
- -->
+
  <!-- 
  <span>Not able to find room ? </span><button class="btn btn-warning"><a href="procure.html">Contact us</a></button> -->
 
 <!-- section-4-->
 <!-- Promo Section "Statistics" -->
-<!-- <div class="container" id="Statistics">
+<div class="container" id="Statistics">
 <div class="row" style ="width: 100%;">
   <div  class="col-sm-3 "   style="text-align: center;">
     <span  class="w3-xxlarge">55+</span>
@@ -461,7 +333,7 @@ a.article, a.article:hover {
 </div>
 </div>
 
- -->
+
 <!-- Site footer -->
 <footer class="site-footer">
 
@@ -524,6 +396,8 @@ a.article, a.article:hover {
         });
     </script>
 
+
+        <div class="overlay"></div>
 
 
 </body>
