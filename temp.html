@@ -1,75 +1,401 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+        <!-- Scrollbar Custom CSS -->
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#4285f4">
+        <!-- Bootstrap CSS CDN -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <!-- <link rel="stylesheet" href="style3.css"> -->
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+  <title>RoomsPay</title>  
+  <link rel="stylesheet" href="css/homestyle.css">
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- for mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/headerFooter.css">
+  <link rel="stylesheet" href="css/slider.css">
+
 </head>
-<body>
+<body >
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+<!-- header -->
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-arrow-left"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <h3>Bootstrap Sidebar</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul> -->
+                    </li>
+
+                    <li>
+                        <a href="#">Rooms</a>
+                    </li>
+                    <li>
+                        <!-- <a href="#">About</a> -->
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">User</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <!-- <li><a href="#">Page 3</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
+                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Open</span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+              
+            </div>
+        </div>
+
+<!-- header -->
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+<!-- 
+             <li><a href="rooms.html">Home</a></li>
+             <li><a href="rentroom.html">Rooms</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="profile.html">Register</a></li>
+             <li><a href="login.html">Login</a></li> -->
+           
+  <!-- <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="
+  navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="rooms.html">Rooms <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a a class="nav-link" href="about.html" tabindex="-1">About us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          login
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Login</a>
+          <a class="dropdown-item" href="register.html">Register</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+   </header>  -->
+
+
+<br><br><br><br>
+   <!-- slider here -->
+   <div class="slideh">
+    <div id="slider">
+      <figure>
+       <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
+       <img src="imagess\images\ialicante-mediterranean-homes-475803-unsplash.jpg" alt="image1 " style="height:350px">
+       <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
+       <img src="imagess\images\jose-soriano-1230133-unsplash.jpg" alt="image1 " style="height:350px">
+       <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
+
+     </figure>
+   </div>
+ </div> 
+
+  <!-- section-2 -->
+ <section >
+  <div  id="landlord">
+
+    <div style="  padding: 30px;
+    display: block;    margin-left: 18%;">
+
+    <button class="btn_contact" style="
+
+    position: absolute; 
+    margin-top: 8px;
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+    padding: 20px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: -328px;"
+    ><a href="placeroom.html">Post Room</a></button>
+  </div>
+
+  <div style="padding: 13px 30px;
+  display: block;        margin-left: 53%;
+
+  margin-top: -55px;">
+  <span"><p>Are You a <br>landlord?</p><br><p style="font-size: 10px; ">contact us to post your room</p></span>
+</div>
+</div>
+</section>
+
+<!-- overlay here -->
+    <div class="overlay"></div>
+
+    <!-- post room button here
+    text here-->
+
+<section >
+  <div  class="landlord">
+    <div class="landlord-inner">
+      <div class="landlord-btn">
+        <button class="btn_contact"><a href="#">Post Room</a></button>
+      </div>      
+       <div class="landlord-text">
+          <span><p>Are You a <br>landlord?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- blocks -->
+
+<!-- section-3 -->
+ <!-- card-1 -->
+
+  <!-- <div class="room_box"> -->
+    
+    <!-- <h3 style="color: #c0392b;">NearBy Rooms</h3><hr>   -->
+        <!-- image card here -->
+        <div class="card" style="width: 18rem; margin: 0 auto;">
+          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+          <div class="card-body">
+            <h5>Title here</h5>
+            <p>this is text</p>
+            <a href="#" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+<hr>
+        <div class="card" style="width: 18rem; margin: 0 auto;">
+          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+          <div class="card-body">
+            <h5>Title here</h5>
+            <p>this is text</p>
+            <a href="#" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+<hr>
+        <div class="card" style="width: 18rem; margin: 0 auto;">
+          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+          <div class="card-body">
+            <h5>Title here</h5>
+            <p>this is text</p>
+            <a href="#" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+<hr>
+
+
+ <!-- 
+ <span>Not able to find room ? </span><button class="btn btn-warning"><a href="procure.html">Contact us</a></button> -->
+
+<!-- section-4-->
+<!-- Promo Section "Statistics" -->
+<div class="container" id="Statistics">
+<div class="row" style ="width: 100%;">
+  <div  class="col-sm-3 "   style="text-align: center;">
+    <span  class="w3-xxlarge">55+</span>
+    <br>Colony Registered
+  </div>
+
+  <div class="col-sm-3" style="text-align: center;">
+    <span class="w3-xxlarge" >14+</span>
+    <br>Partners
+  </div>
+  <div  class="col-sm-3" style="text-align: center;">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div  class="col-sm-3" style="text-align: center;">
+    <span class="w3-xxlarge">150+ </span>
+    <br>central locations
+  </div>
+</div>
 </div>
 
-<h2>Animated Sidenav Example</h2>
-<p>Click on the element below to open the side navigation menu.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+<!-- Site footer -->
+<footer class="site-footer">
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved</p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</section>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+
+        <div class="overlay"></div>
+
+
 </body>
-</html> 
+</html>
+
+
+
+
