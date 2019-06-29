@@ -24,8 +24,39 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-<style type="text/css">
-   
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
 </style>
 </head>
 
@@ -39,7 +70,7 @@
             </div>
 
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>Rooms pay</h3>
             </div>
 
             <ul class="list-unstyled components">
@@ -94,12 +125,12 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-danger">
+<!-- menu button -->
+                    <button type="button" id="sidebarCollapse" class="btn btn-danger" style="background-color: #db2340;">
                         <i class="fas fa-align-left"></i>
                         <!-- <span>Toggle Sidebar</span> -->
                     </button>
-                    <h4>Roomspay</h4>
+                    <h4 >Rooms<strong style="color:red;">pay</strong></h4>
                 </div>
             </nav>
 
@@ -108,6 +139,7 @@
 
 
    <!-- slider here -->
+   
    <div class="slideh">
     <div id="slider">
       <figure>
@@ -119,7 +151,8 @@
 
      </figure>
    </div>
- </div> 
+
+ </div>
 <!-- slider end -->
 
   <!-- section-2 -->
@@ -169,6 +202,10 @@
 </div>
 </div>
 </section>
+<div class="container">
+  <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="Avatar" class="image">
+  <div class="overlay">My Name is John</div>
+</div>
 
   <!-- section-2 end-->
 <br>
