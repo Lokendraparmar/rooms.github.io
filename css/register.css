@@ -1,119 +1,143 @@
-
-:root {
-  --input-padding-x: 1.5rem;
-  --input-padding-y: .75rem;
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  background-color: #00ace6;
 }
 
-body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
+.wrapper{
+/*   border:solid black; */
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
 }
 
-.card-signin {
-  border: 0;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.myForm{
+/*   border:solid black; */
+  background-color:white;
+  margin:50px auto;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  width:25%;
+  min-width:400px;
+  border-radius:5px;
+/*   height:450px;     */
 }
 
-.card-signin .card-title {
-  margin-bottom: 2rem;
-  font-weight: 300;
-  font-size: 1.5rem;
+
+
+.formElement{
+/*   border:solid black; */
+/*   flex-basis:100%; */
+  width:90%;
 }
 
-.card-signin .card-img-left {
-  width: 45%;
-  /* Link to your background image using in the property below! */
-  background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
-  background-size: cover;
+
+
+.formInstructionsDiv{
+  width:100%; 
+/*   flex-grow:1; */
+  padding:15px 0;
+  background-color:#f8e76e;
+  border-radius:5px;
+  border-bottom: solid #f8e76e; 
+ 
 }
 
-.card-signin .card-body {
-  padding: 2rem;
+.formInstructionsDiv h2{
+  margin-left:5%;
+  font-size:3em;
+  font-family:"ebrima";
+  font-weight:lighter;
 }
 
-.form-signin {
-  width: 100%;
+.formInstructionsDiv p{
+  margin-left:5%;
+  font-size:1em;
+  font-family: "ebrima";
+}
+.fillContentDiv{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-grow:1;
+  margin-top:40px;
+  margin-bottom: 82px;
+  height:280px;
+  
+  
 }
 
-.form-signin .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  transition: all 0.2s;
+.formContentElement{
+  min-width:100%;
 }
 
-.form-label-group {
-  position: relative;
-  margin-bottom: 1rem;
+.names{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+
 }
 
-.form-label-group input {
-  height: auto;
-  border-radius: 2rem;
+.names .inputRequest{
+  width:47.5%;
+  min-width:150px;
 }
 
-.form-label-group>input,
-.form-label-group>label {
-  padding: var(--input-padding-y) var(--input-padding-x);
+.names .inputRequest:last-child{
+/*   margin-right:5%; */
 }
 
-.form-label-group>label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  margin-bottom: 0;
-  /* Override default `<label>` margin */
-  line-height: 1.5;
-  color: #495057;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  transition: all .1s ease-in-out;
+.otherInputs{
+
 }
 
-.form-label-group input::-webkit-input-placeholder {
-  color: transparent;
+.otherInputs .inputRequest{
+
 }
 
-.form-label-group input:-ms-input-placeholder {
-  color: transparent;
+
+.inputRequest{
+/*   margin-bottom:20px; */
+  padding:15px;
+  font-size:1.2em;
+  background-color: #f2f2f2;
+  border-style:none;
+  border-radius:5px;
 }
 
-.form-label-group input::-ms-input-placeholder {
-  color: transparent;
+.inputRequest:focus{
+  border-style:solid;
+  border-width:3px;
+  border-color: #0d6380;
 }
 
-.form-label-group input::-moz-placeholder {
-  color: transparent;
+
+.submitButton{
+  width:40%;
+  height:100%;
+  background-color: #0099cc;
+  border-style:none;
+  color:white;
+  font-size:1.2em;
+  font-weight:800;
+  cursor:pointer;
+  border-radius:5px;
 }
 
-.form-label-group input::placeholder {
-  color: transparent;
+.submitButton:hover{
+  background-color:#1cacdd;
+}
+.submitButtonDiv{
+  grow:1;
+  height:45px;
+/*   padding-bottom:40px; */
+  margin-bottom:20px;
+  
 }
 
-.form-label-group input:not(:placeholder-shown) {
-  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-  padding-bottom: calc(var(--input-padding-y) / 3);
-}
-
-.form-label-group input:not(:placeholder-shown)~label {
-  padding-top: calc(var(--input-padding-y) / 3);
-  padding-bottom: calc(var(--input-padding-y) / 3);
-  font-size: 12px;
-  color: #777;
-}
-
-.btn-google {
-  color: white;
-  background-color: #ea4335;
-}
-
-.btn-facebook {
-  color: white;
-  background-color: #3b5998;
-}

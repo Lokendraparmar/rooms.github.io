@@ -1,110 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
 body {
-  margin: 0;
-  background: #25A3FF;
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  position: relative;
-  color: #fff;
-  opacity: 0;
-  transition: .8s ease-in-out;
-}
-
-#progress {
-  position: absolute;
-  background: #0069ec;
-  height: 100vh;
-  width: 0;
-  transition: width 0.2s ease-in-out;
-}
-
-.center {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-/******
-  Form
- ******/
-
-#register {
-  background: #fff;
-  position: relative;
-  width: 410px;
-  padding: 2px 15px 20px 15px;
-  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
-  transition: transform .1s ease-in-out;
+.vldform {
+    box-sizing: border-box;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 55px;
+    font-family: "Nunito Sans";
+    animation: a .5s;
+    animation-fill-mode: forwards;
+    border: #d4d4d4 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
-#register.close {
-  width: 0;
-  padding: 0;
-  overflow: hidden;
-  transition: .8s ease-in-out;
-  box-shadow: 0 16px 24px 2px rgba(0,0,0,0);
+.vldform a {
+    text-decoration: none;
 }
 
-.next {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-  font-size: 40px;
-  color: #25a3ff;
-  float: right;
-  cursor: pointer;
-}
-.next:hover {color: #333}
-.wrong .next {color: #ff2d26}
-.close .next {color: #fff}
-
-#inputContainer {
-  position: relative;
-  opacity: 0;
-  width: 350px;
-  margin-top: 25px;
-  transition: opacity .3s ease-in-out;
+.vldform h1 {
+    font-size: 40px;
+    color: #552FAB;
+    margin: 0px 0px 26px 0px;
 }
 
-#inputContainer input {
-  width: 100%;
-  padding: 0 5px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  outline: 0;
-  background: transparent;
-  box-shadow:none;
+.vldform__textbox {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px #512DA8 solid;
+    font-size: 18px;
+    margin-top: 36px;
+    padding-bottom: 9px;
+    font-family: "Nunito Sans";
 }
 
-#inputLabel {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0 5px;
-  transition: .2s ease-in-out;
+.vldform__textbox[type="password"]::after {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: rebeccapurple;
+    
 }
 
-#inputContainer input:valid + #inputLabel {
-  top: -15px;
-  font-size: 11px;
-  font-weight: normal;
-  color: #9e9e9e;
+.vldform__recoverypassword{
+    align-self: flex-end;
+    margin: 10px 0px;
+    font-size: 16px;
+    color: #2E67A9;
 }
 
-#inputProgress {
-  position: absolute;
-  border-bottom: 2px solid #25a3ff;
-  padding: 3px 0;
-  width: 0;
-  transition: width .6s ease-in-out;
+.vldform__button {
+    margin-top: 42px;
+    height: 50px;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(#512DA8, #673AB7);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Nunito Sans";
+    cursor: pointer;
 }
 
-.wrong #inputProgress {
-  border-color: #ff2d26;
+.vldform__signup {
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.vldform__signup a {
+    color: #6538B5;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.vldreg {
+    display: none;
+}
+
+.vldrecpass {
+    display: none;
+}
+
+@keyframes a {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(5px)
+    }
+}
+
+@media (max-width: 400px) {
+    .vldform {
+        width: 350px;
+        padding: 20px 40px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .vldform {
+        width: 305px;
+        padding: 20px 35px;
+    }
+
+    .vldform__signup {
+        text-align: center;
+    }
+
+    .vldform__signup a {
+        margin-left: 14px;
+    }
 }

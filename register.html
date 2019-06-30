@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="css/register.css">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,49 +16,56 @@
 </head>
 <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
 
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-xl-9 mx-auto">
-        <div class="card card-signin flex-row my-5">
-          <div class="card-img-left d-none d-md-flex">
-             <!-- Background image for card set in CSS! -->
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Register</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                <label for="inputUserame">Username</label>
-              </div>
+<div class="wrapper">
+  <form class="myForm">
+    <div class="formInstructionsDiv formElement">
+      <h2 class="formTitle" >Sign Up</h2>
+      <p class="instructionsText">Please fill in this form to create an account</p>
+     </div>
+    <div class="fillContentDiv formElement">
+    <div class="names formContentElement">  
+      <input class="inputRequest " type="text" placeholder="First Name"/>
 
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                <label for="inputEmail">Email address</label>
-              </div>
-              
-              <hr>
+      <input class="inputRequest " type="text" placeholder="Last Name"/>
 
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-              
-              <div class="form-label-group">
-                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
-                <label for="inputConfirmPassword">Confirm password</label>
-              </div>
-
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
-              <a class="d-block text-center mt-2 small" href="#">Sign In</a>
-              <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
-              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
-            </form>
-          </div>
-        </div>
+   </div>
+    
+      <label>
+        <input class="inputRequest formContentElement" type="text" placeholder="Email">
+      </label>
+      <label>
+        <input class="inputRequest formContentElement" type="password" placeholder="Enter password">
+      </label>
+      <label>
+        <input class="inputRequest formContentElement" type="password" placeholder="Confirm password">
+      </label>
+  
       </div>
+    <div class="submitButtonDiv formElement">
+    
+    <button class="submitButton">Sign Up</button>
     </div>
-  </div>
+  </form>
+</div>
+<script type="text/javascript">
+  function showregform(){
+    document.title = "Sign up";
+    document.querySelector(".vldauth").style.display = "none";
+    document.querySelector(".vldreg").style.display = "flex";
+}
+
+function showauthform(){
+    document.title = "Log in";
+    document.querySelector(".vldauth").style.display = "flex";
+    document.querySelector(".vldreg").style.display = "none";
+    document.querySelector(".vldrecpass").style.display = "none";
+}
+
+function showrecoveryform(){
+    document.title = "Password recovery";
+    document.querySelector(".vldauth").style.display = "none";
+    document.querySelector(".vldrecpass").style.display = "flex";
+}
+</script>
 </body>
 </html>
