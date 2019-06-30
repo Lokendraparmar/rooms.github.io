@@ -41,7 +41,7 @@ a:focus {
 .line {
     width: 100%;
     height: 1px;
-    border-bottom: 1px dashed red;
+    border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
 
@@ -111,7 +111,7 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #d11450;
 }
 
 #sidebar ul p {
