@@ -23,40 +23,17 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-<style>
-* {box-sizing: border-box;}
-
-.container {
-  position: relative;
-  width: 50%;
-  max-width: 300px;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
+<style type="text/css">
+    #danger{
+        /*border-color:red;*/
+        color:red;
+        border: 2px solid red;
+       background-color: white;
+    }
+    #danger:hover{
+        background-color: #f44336;
+        color: white;
+    }
 </style>
 </head>
 
@@ -172,8 +149,8 @@
 </div> -->
 <!-- <br><br> -->
 
-
-  <div  id="landlord">
+<!-- 
+  <div  >
 
     <div style="  padding: 30px;
     display: block;    margin-left: 18%;">
@@ -200,12 +177,16 @@
   margin-top: -60px;">
   <span ><p style="color:white;">Are You a <br>landlord?</p><br><p style="font-size: 10px;color:white;" >contact us to post your room</p></span>
 </div>
-</div>
+</div> -->
 </section>
-<div class="container">
-  <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="Avatar" class="image">
-  <div class="overlay">My Name is John</div>
+<div>
+<div class="row justify-content-center "  id="landlord">
+    <div class="col-6 col-sm-6  p-5 text-center" style="display: block;"><button class="btn" id="danger" 
+        style="">Post Room</button></div>
+    <div class="col-6 col-sm-6  p-5" >Are You a landlord?<br><site style="font-size: 11px;">contact us to post your room</site></div>
 </div>
+
+
 
   <!-- section-2 end-->
 <br>
