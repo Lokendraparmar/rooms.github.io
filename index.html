@@ -23,46 +23,34 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-<style type="text/css">
-    #danger{
-        /*border-color:solid red;*/
-        color:red;
-        background-color: white;
-    }
-    #danger:hover{
-        background-color: #f44336;
-        color: white;
-    }
-    #menu{
-        width:45%;
-        float:left;
-        padding: 15px;
-        border:1px solid black;
-    margin-top: 4%;
-    }
-    #main{
-        width:55%;
-        float:left;
-        padding: 15px;
-        border:1px solid black;
-    }
-    /*#menu{
-        width:75%;
-        float:left;
-        padding: 15px;
-        border:1px solid black;
-    }
-    #main{
-        width:25%;
-        float:left;
-        padding: 15px;
-        border:1px solid black;
-    }*/
-</style>
+    <style type="text/css">
+        #danger{
+            /*border-color:solid red;*/
+            color:red;
+            background-color: white;
+        }
+        #danger:hover{
+            background-color: #f44336;
+            color: white;
+        }
+        #menu{
+            width:45%;
+            float:left;
+            padding: 15px;
+            border:1px solid black;
+            margin-top: 4%;
+        }
+        #main{
+            width:55%;
+            float:left;
+            padding: 15px;
+            border:1px solid black;
+        }
+
+    </style>
 </head>
 
 <body>
-
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -77,186 +65,125 @@
             <ul class="list-unstyled components">
                 <p>Menu</p>
                 <li class="active">
-                     <a href="#">Home</a>
-                    <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a> -->
-   <!--                  <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-    -->             </li>
-                <li>
-                    <a href="#">Rooms</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">User</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="login.html">Log In</a>
-                        </li>
-                        <li>
-                            <a href="register.html">Register</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="services.html">Service</a>
-                </li>
-                <li>
-                    <a href="about.html">About us</a>
-                </li>
-            </ul>
+                   <a href="#">Home</a>
+               </li>
+               <li>
+                <a href="rooms.html">Rooms</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">User</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="login.html">Log In</a>
+                    </li>
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="services.html">Service</a>
+            </li>
+            <li>
+                <a href="about.html">About us</a>
+            </li>
+        </ul>
 
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="#" class="download">Rooms Pay</span></a>
-                </li>
-                <li>
-                    <a href="index.html" class="article">Back to Home</a>
-                </li>
-            </ul>
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="#" class="download">Rooms Pay</span></a>
+            </li>
+            <li>
+                <a href="index.html" class="article">Back to Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- menu button -->
+                <button type="button" id="sidebarCollapse" class="btn btn-danger" style="background-color: #db2340;">
+                    <i class="fas fa-align-left"></i>
+                    <!-- <span>Toggle Sidebar</span> -->
+                </button>
+                <h4 >Rooms<strong style="color:red;">pay</strong></h4>
+            </div>
         </nav>
 
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-<!-- menu button -->
-                    <button type="button" id="sidebarCollapse" class="btn btn-danger" style="background-color: #db2340;">
-                        <i class="fas fa-align-left"></i>
-                        <!-- <span>Toggle Sidebar</span> -->
-                    </button>
-                    <h4 >Rooms<strong style="color:red;">pay</strong></h4>
-                </div>
-            </nav>
-
-<!-- body content here -->
+        <!-- body content here -->
 
 
 
-   <!-- slider here -->
-   
-   <div class="slideh">
-    <div id="slider">
-      <figure>
-       <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
-       <img src="imagess\images\ialicante-mediterranean-homes-475803-unsplash.jpg" alt="image1 " style="height:350px">
-       <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
-       <img src="imagess\images\jose-soriano-1230133-unsplash.jpg" alt="image1 " style="height:350px">
-       <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
+        <!-- slider here -->
 
-     </figure>
-   </div>
+       <button class="btnsearch"><a href="filter.html">search rooms</a></button>
+        <div class="slideh">
+            <div id="slider">
+              <figure>
+                 <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
+                 <img src="imagess\images\ialicante-mediterranean-homes-475803-unsplash.jpg" alt="image1 " style="height:350px">
+                 <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
+                 <img src="imagess\images\jose-soriano-1230133-unsplash.jpg" alt="image1 " style="height:350px">
+                 <img src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="image1 " style="height:350px">
 
- </div>
-<!-- slider end -->
+             </figure>
+         </div>
 
-  <!-- section-2 -->
+     </div>
+     <!-- slider end -->
+
+     <!-- section-2 -->
 
 
- <section >
-<!-- 
-<div class="container" >
-    <div class="row" id="landlord">
-        <div class="col-sm-4">
-     <button>Post Room</button>
-        </div>
-        <div class="col-sm-4">
-            1
-        </div>
+     <section >
+
+    <div id="landlord">
+        <div class="row" id="menu" style="display: block;"><button class="btn" id="danger">Post Room</button></div>
+            <div class="" id="main">Are You a landlord?<br>
+                <site style="font-size: 11px;">contact us to post your room</site>
+            </div>
     </div>
-</div> -->
-<!-- <br><br> -->
-
-<!-- 
-  <div  >
-
-    <div style="  padding: 30px;
-    display: block;    margin-left: 18%;">
-
-    <button class="btn_contact" style="
-
-    position: absolute; 
-    margin-top: 8px;
-    border: 2px solid red;
-    background-color: white;
-    color: white;
-    padding: 20px 12px;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 10px;
-    text-decoration: none;
-    margin-left: -328px;"
-    ><a href="placeroom.html">Post Room</a></button>
-  </div>
-
-  <div style="padding: 13px 30px;
-  display: block;        margin-left: 53%;
-
-  margin-top: -60px;">
-  <span ><p style="color:white;">Are You a <br>landlord?</p><br><p style="font-size: 10px;color:white;" >contact us to post your room</p></span>
-</div>
-</div>
-</section>
-<div> -->
-<!-- <div id="landlord">
-    <div class="col-6 col-sm-6  p-5 text-center" style="display: block;"><button class="btn" id="danger" 
-        style="">Post Room</button></div>
-    <div class="col-6 col-sm-6  p-5" >Are You a landlord?<br><site style="font-size: 11px;">contact us to post your room</site></div>
-</div>
-
- -->
-<div id="landlord">
-    <div class="row" id="menu" style="display: block;"><button class="btn" id="danger" 
-        style="">Post Room</button></div>
-    <div class="" id="main">Are You a landlord?<br><site style="font-size: 11px;">contact us to post your room</site></div>
-</div>
 
 
-
-  <!-- section-2 end-->
-<br>
-  <!-- section-3 -->
+    <!-- section-2 end-->
+    <br>
+    <!-- section-3 -->
 
     <h3 style="color: #DD0031;text-align: center;">NearBy Rooms</h3><hr>  
-        <!-- image card here -->
-        <div class="card" style="width: 18rem; margin: 0 auto; ">
-          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
-          <div class="card-body">
-            <h5>Title here</h5>
-            <p>this is text</p>
-            <a href="#" class="btn btn-danger">More Info</a>
-          </div>
-        </div>
+    <!-- image card here -->
+    <div class="card" style="width: 18rem; margin: 0 auto; ">
+      <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+      <div class="card-body">
+        <h5>Title here</h5>
+        <p>this is text</p>
+        <a href="#" class="btn btn-danger">More Info</a>
+    </div>
+</div>
 <hr>
-        <div class="card" style="width: 18rem; margin: 0 auto;">
-          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
-          <div class="card-body">
-            <h5>Title here</h5>
-            <p>this is text</p>
-            <a href="#" class="btn btn-danger">More Info</a>
-          </div>
-        </div>
+<div class="card" style="width: 18rem; margin: 0 auto;">
+  <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+  <div class="card-body">
+    <h5>Title here</h5>
+    <p>this is text</p>
+    <a href="#" class="btn btn-danger">More Info</a>
+</div>
+</div>
 <hr>
-        <div class="card" style="width: 18rem; margin: 0 auto;">
-          <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
-          <div class="card-body">
-            <h5>Title here</h5>
-            <p>this is text</p>
-            <a href="#" class="btn btn-danger">More Info</a>
-          </div>
-        </div>
+<div class="card" style="width: 18rem; margin: 0 auto;">
+  <img class="card-img-top" src="imagess\images\deborah-cortelazzi-615800-unsplash.jpg" alt="card image cap">
+  <div class="card-body">
+    <h5>Title here</h5>
+    <p>this is text</p>
+    <a href="#" class="btn btn-danger">More Info</a>
+</div>
+</div>
 <hr>
 
-  <!-- section-3 -->
+<!-- section-3 -->
 
 <!-- Promo Section "Statistics" -->
-<!-- <div class="container" id="Statistics">
+ <div class="container" id="Statistics">
 <div class="row" style ="width: 100%;">
   <div  class="col-sm-3 "   style="text-align: center;">
     <span  class="w3-xxlarge">55+</span>
@@ -277,8 +204,6 @@
   </div>
 </div>
 </div>
- -->
-
 
 
 <!-- Site footer -->
@@ -288,60 +213,59 @@
     <div class="row">
       <div class="col-md-8 col-sm-6 col-xs-12">
         <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved</p>
-      </div>
+    </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="col-md-4 col-sm-6 col-xs-12">
         <ul class="social-icons">
           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
           <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
           <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-        </ul>
-      </div>
-    </div>
+      </ul>
   </div>
+</div>
+</div>
 </footer>
 
 <!-- footer end here -->
 
 <!-- put your content End here -->
 
-        </div>
-    </div>
+</div>
+</div>
 
-    <div class="overlay"></div>
-
-
+<div class="overlay"></div>
 
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
 
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
         });
-    </script>
-</body>
 
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+</body>
 </html>
