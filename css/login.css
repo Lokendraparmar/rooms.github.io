@@ -1,124 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import "bourbon"
 
-body {
-  display: flex;
-  justify-content: center;
-}
+$white: #FFFFFF
+$black: #000000
+$accent: #EF3B3A
 
-.vldform {
-    box-sizing: border-box;
-    width: 375px;
-    display: flex;
-    flex-direction: column;
-    padding: 35px 55px;
-    font-family: "Nunito Sans";
-    animation: a .5s;
-    animation-fill-mode: forwards;
-    border: #d4d4d4 1px solid;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-}
-
-.vldform a {
-    text-decoration: none;
-}
-
-.vldform h1 {
-    font-size: 40px;
-    color: #552FAB;
-    margin: 0px 0px 26px 0px;
-}
-
-.vldform__textbox {
-    border: 0;
-    outline: 0;
-    border-bottom: 2px #512DA8 solid;
-    font-size: 18px;
-    margin-top: 36px;
-    padding-bottom: 9px;
-    font-family: "Nunito Sans";
-}
-
-.vldform__textbox[type="password"]::after {
-    content: " ";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: rebeccapurple;
-    
-}
-
-.vldform__recoverypassword{
-    align-self: flex-end;
-    margin: 10px 0px;
-    font-size: 16px;
-    color: #2E67A9;
-}
-
-.vldform__button {
-    margin-top: 42px;
-    height: 50px;
-    border: 0;
-    color: #fff;
-    border-radius: 10px;
-    background-image: linear-gradient(#512DA8, #673AB7);
-    font-size: 22px;
-    font-weight: 600;
-    font-family: "Nunito Sans";
-    cursor: pointer;
-}
-
-.vldform__signup {
-    align-self: center;
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-
-.vldform__signup a {
-    color: #6538B5;
-    font-weight: 600;
-    margin-left: 4px;
-}
-
-.vldreg {
-    display: none;
-}
-
-.vldrecpass {
-    display: none;
-}
-
-@keyframes a {
-    0% {
-        opacity: 0;
-        transform: translateY(-5px)
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(5px)
-    }
-}
-
-@media (max-width: 400px) {
-    .vldform {
-        width: 350px;
-        padding: 20px 40px;
-    }
-    
-}
-
-@media (max-width: 360px) {
-    .vldform {
-        width: 305px;
-        padding: 20px 35px;
-    }
-
-    .vldform__signup {
-        text-align: center;
-    }
-
-    .vldform__signup a {
-        margin-left: 14px;
-    }
-}
+$form-width: 300px
+  
+/* Form */
+.form
+  position: relative
+  z-index: 1
+  background: $white
+  max-width: $form-width
+  margin: 0 auto 100px
+  padding: 30px
+  +border-top-radius(3px)
+  +border-bottom-radius(3px)
+  text-align: center
+  .thumbnail
+    background: $accent
+    width: 150px
+    height: 150px
