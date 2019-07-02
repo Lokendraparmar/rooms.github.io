@@ -15,32 +15,27 @@
 <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
 
 <body>
-  <form class="vldform vldauth" action="login.php" method="POST">
-    <h1>Log in</h1>
-    <input class="vldform__textbox" type="text" name="username" placeholder="Username" required>
-    <input class="vldform__textbox" type="password" name="pass" id="" placeholder="Password" required>
-    <a class="vldform__recoverypassword" href="#" onclick="showrecoveryform()">Forgot password?</a>
-    <input class="vldform__button" type="submit" value="Log in">
-    <p class="vldform__signup">Don't have account?
-      <a class="vldform__signuplink" href="#" onclick="showregform()">Sign up</a>
-    </p>
-  </form>
-  <form class="vldform vldreg" action="register.php" method="POST">
-      <h1>Sign up</h1>
-      <input class="vldform__textbox" type="text" name="username" placeholder="Username" required>
-      <input class="vldform__textbox" type="email" name="email" id="" placeholder="Email" required>
-      <input class="vldform__textbox" type="password" name="pass" id="" placeholder="Password" required>
-      <input class="vldform__textbox" type="password" name="pass2" id="" placeholder="Password again" required>
-      <input class="vldform__button" type="submit" value="Sign up">
-      <p class="vldform__signup">You already have account?
-        <a href="#" onclick="showauthform()">Log in</a>
-      </p>
-  </form>
-
-  <form class="vldform vldrecpass" action="recovery.php" method="POST">
-    <h1>Password recovery</h1>
-    <input class="vldform__textbox" type="email" name="email" id="" placeholder="Email" required>
-    <input class="vldform__button" type="submit" value="Recovery">
-  </form>
+  .container
+  .info
+    h1 Flat Login Form
+    span Made with 
+     i.fa.fa-heart
+     |  by 
+     a(href="http://andytran.me") Andy Tran
+.form
+  .thumbnail
+    img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg')
+  form.register-form
+    input(type='text', placeholder='name')
+    input(type='password', placeholder='password')
+    input(type='text', placeholder='email address')
+    button create
+    p.message Already registered? 
+      a(href='#') Sign In
+  form.login-form
+    input(type='text', placeholder='username')
+    input(type='password', placeholder='password')
+    button login
+    p.message Not registered? 
 </body>
 </html>
