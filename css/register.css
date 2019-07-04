@@ -1,143 +1,134 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-}
-body{
-  background-color: #00ace6;
-}
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-.wrapper{
-/*   border:solid black; */
-  display: -webkit-flex;
-  display: flex;
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
   height: 100%;
-}
-
-.myForm{
-/*   border:solid black; */
-  background-color:white;
-  margin:50px auto;
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  align-items:center;
-  width:25%;
-  min-width:400px;
-  border-radius:5px;
-/*   height:450px;     */
-}
-
-
-
-.formElement{
-/*   border:solid black; */
-/*   flex-basis:100%; */
-  width:90%;
-}
-
-
-
-.formInstructionsDiv{
-  width:100%; 
-/*   flex-grow:1; */
-  padding:15px 0;
-  background-color:#f8e76e;
-  border-radius:5px;
-  border-bottom: solid #f8e76e; 
- 
-}
-
-.formInstructionsDiv h2{
-  margin-left:5%;
-  font-size:3em;
-  font-family:"ebrima";
-  font-weight:lighter;
-}
-
-.formInstructionsDiv p{
-  margin-left:5%;
-  font-size:1em;
-  font-family: "ebrima";
-}
-.fillContentDiv{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  flex-grow:1;
-  margin-top:40px;
-  margin-bottom: 82px;
-  height:280px;
+  /*Image only BG fallback*/
   
+  /*background = gradient + image pattern combo*/
+  background: 
+    linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+}
+/*form styles*/
+#msform {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
   
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: white;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+  background: #27AE60;
+  color: white;
 }
 
-.formContentElement{
-  min-width:100%;
-}
 
-.names{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-
-}
-
-.names .inputRequest{
-  width:47.5%;
-  min-width:150px;
-}
-
-.names .inputRequest:last-child{
-/*   margin-right:5%; */
-}
-
-.otherInputs{
-
-}
-
-.otherInputs .inputRequest{
-
-}
-
-
-.inputRequest{
-/*   margin-bottom:20px; */
-  padding:15px;
-  font-size:1.2em;
-  background-color: #f2f2f2;
-  border-style:none;
-  border-radius:5px;
-}
-
-.inputRequest:focus{
-  border-style:solid;
-  border-width:3px;
-  border-color: #0d6380;
-}
-
-
-.submitButton{
-  width:40%;
-  height:100%;
-  background-color: #0099cc;
-  border-style:none;
-  color:white;
-  font-size:1.2em;
-  font-weight:800;
-  cursor:pointer;
-  border-radius:5px;
-}
-
-.submitButton:hover{
-  background-color:#1cacdd;
-}
-.submitButtonDiv{
-  grow:1;
-  height:45px;
-/*   padding-bottom:40px; */
-  margin-bottom:20px;
-  
-}
 
