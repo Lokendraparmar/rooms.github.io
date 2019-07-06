@@ -33,19 +33,155 @@
             background-color: #f44336;
             color: white;
         }
+
+        @media only screen and (max-width:768px){
         #menu{
-            width:45%;
-            float:left;
-            padding: 15px;
-            border:1px solid black;
-            margin-top: 4%;
-        }
+         width: 45%;
+    float: left;
+    padding: 20px;
+    padding-left: 52px;
+    margin-top: 5%;
+}
         #main{
-            width:55%;
-            float:left;
-            padding: 15px;
-            border:1px solid black;
-        }
+               width: 45%;
+    float: left;
+    padding: 10px;
+    margin-left: 14%;
+    margin-top: 5%;
+  }
+
+}
+
+
+
+
+
+
+ 
+/*#menu {*/
+ /*   width: 50%;
+    float: left;
+    margin-right: 15%;
+     padding: 20px; 
+    padding-left: 24%;
+    padding-top: 0.8%; 
+*/    /*border: 1px solid black;*/
+    /* margin-top: 4%; */
+        /*}#main{*/
+               /*width: 45%;*/
+    /*float: left;*/
+    /*padding: 15px;*/
+
+    /*padding-top: 0.7%;*/
+    /*border: 1px solid black;*/
+    /*margin-left: 14%;*/
+    /*margin-top: 4%;*/
+  /*}*/
+
+
+
+
+
+/* banner */
+.mian-content-wthree {
+    background: url() no-repeat top;
+
+
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 50vw;
+    z-index: 1;
+    position: relative;
+}
+
+/* banner text */
+.style-banner {
+    padding-top: 18em;
+    max-width: 800px;
+}
+
+.style-banner h3 {
+    font-size: 56px;
+    letter-spacing: 1px;
+}
+
+.style-banner h3 span {
+    color: #ff6b6b;
+    background: #fff;
+    padding: 0px 17px 5px;
+    font-size: 50px;
+}
+
+.style-banner p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* //banner text */
+/* form */
+.home-form-w3ls select.form-control {
+    font-size: 15px;
+    border: none;
+    -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.28);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.28);
+    outline: none;
+    letter-spacing: 1px;
+    color: #5f5d5d;
+    box-sizing: border-box;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    height: 46px !important;
+    cursor: pointer;
+}
+
+.home-form-w3ls button {
+    background: #ff6b6b;
+    color: #fff;
+    padding: 13px 40px;
+    margin-top: 2em;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* //form */
+/* //banner */
+
+/* bannner bottom */
+h3.title-w3 {
+    font-size: 42px;
+}
+
+h3.title-w3 span {
+    color: #ff6b6b;
+}
+
+h3.title-sub {
+    font-size: 27px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+h3.title-sub span {
+    display: block;
+}
+
+/* //bannner bottom */
+
 
     </style>
 </head>
@@ -116,7 +252,7 @@
 
 
         <!-- slider here -->
-
+<!-- 
        <button class="btnsearch"><a href="filter.html">search rooms</a></button>
         <div class="slideh">
             <div id="slider">
@@ -130,8 +266,79 @@
              </figure>
          </div>
 
-     </div>
+     </div> -->
      <!-- slider end -->
+
+
+
+
+ <!-- banner -->
+    <div class="main-w3pvt mian-content-wthree text-center" id="home">
+
+        <div class="container">
+            <div class="style-banner mx-auto">
+                <h3 class="text-wh font-weight-bold">Search and Find Your <span>Dream</span>Room</h3>
+                <p class="mt-2 text-li" id="find">Rooms for sale & for rent around the world</p>
+                <!-- form -->
+                <div class="home-form-w3ls mt-5 pt-lg-4">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select required="" class="form-control">
+                                        <option value="">Any Status</option>
+                                        <option value="1">For Rent</option>
+                                        <option value="2">For Sale</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select required="" class="form-control">
+                                        <option value="">All Type</option>
+                                        <option value="1">Apartments</option>
+                                        <option value="2">Restaurant</option>
+                                        <option value="3">Shop</option>
+                                        <option value="4">Villa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select required="" class="form-control">
+                                        <option value="">Bedrooms</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select required="" class="form-control">
+                                        <option value="">Location</option>
+                                        <option value="1">United States</option>
+                                        <option value="2">Canada</option>
+                                        <option value="3">New York</option>
+                                        <option value="4">Chicago</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn_apt">Find Here</button>
+                    </form>
+                </div>
+                <!-- //form -->
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+<!---728x90--->
+
+
+
+<br><br>
+
+
+
+
 
      <!-- section-2 -->
 
