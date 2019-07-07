@@ -173,7 +173,7 @@ a.navbar-brand i {
 /* banner */
 
 .banner {
-	background: url(../images/bg4.jpg) center no-repeat;
+	background: url(..assets/img/bg4.jpg) center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -194,7 +194,6 @@ a.navbar-brand i {
     transform: rotate(-360deg);
 }
 .inner-banner {
-	background: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60")no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
